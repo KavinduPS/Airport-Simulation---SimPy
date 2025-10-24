@@ -85,29 +85,3 @@ class AirportMetrics:
             'throughput_per_hour': (self.total_aircraft_departed / sim_time) * 60 if sim_time > 0 else 0,
         }
         return summary
-
-    # def print_summary(self, sim_time, num_runways, num_gates):
-    #     """Print formatted summary statistics"""
-    #     print("\n" + "=" * 70)
-    #     print("SIMULATION SUMMARY")
-    #     print("=" * 70)
-    #     summary = self.get_summary(sim_time)
-    #     print(f"Total aircraft arrived: {summary['total_arrived']}")
-    #     print(f"Total aircraft departed: {summary['total_departed']}")
-    #     print(f"\nWait Times:")
-    #     print(f"  Avg runway wait (landing): {summary['avg_runway_wait_landing']:.2f} min")
-    #     print(f"  Avg runway wait (takeoff): {summary['avg_runway_wait_takeoff']:.2f} min")
-    #     print(f"  Avg gate wait: {summary['avg_gate_wait']:.2f} min")
-    #     utilization = self.calculate_utilization(sim_time, num_runways, num_gates)
-    #     print(f"\nResource Utilization:")
-    #     print(f"  Runway utilization: {utilization['runway_util']:.1f}%")
-    #     print(f"  Gate utilization: {utilization['gate_util']:.1f}%")
-    #     print(f"\nThroughput:")
-    #     print(f"  Aircraft per hour: {summary['throughput_per_hour']:.1f}")
-    #     print(f"\nWorst Case:")
-    #     print(f"  Max runway wait (landing): {summary['max_runway_wait_landing']:.2f} min")
-    #     print(f"  Max runway wait (takeoff): {summary['max_runway_wait_takeoff']:.2f} min")
-    #     print(f"  Max gate wait: {summary['max_gate_wait']:.2f} min")
-    #     print(f"\nSystem Performance:")
-    #     print(f"  Avg total time in system: {summary['avg_total_time']:.2f} min")
-    #     print("=" * 70)
