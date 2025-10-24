@@ -5,7 +5,7 @@ This project simulates an airport operation using **SimPy**, focusing on runway 
 ## Features
 
 - Models aircraft arrival, landing, taxiing, gate service, and takeoff.
-- Supports **priority scheduling** for departures.
+- Supports priority scheduling for departures.
 - Collects metrics:
   - Average runway and gate wait times
   - Runway and gate utilization
